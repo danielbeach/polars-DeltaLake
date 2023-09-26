@@ -1,0 +1,7 @@
+version: "3.9"
+services:
+  test:
+    image: "polars-deltalake"
+    volumes:
+      - .:/app
+    command: pythnon3 src/polars-delta-pipeline.py
