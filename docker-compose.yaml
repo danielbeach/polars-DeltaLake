@@ -4,4 +4,4 @@ services:
     image: "polars-deltalake"
     volumes:
       - .:/app
-    command: pythnon3 src/polars-delta-pipeline.py
+    command: python3 src/polars-delta-pipeline.py
