@@ -8,7 +8,7 @@ AWS_DEFAULT_REGION = os.getenv("AWS_DEFAULT_REGION")
 
 def handler(event, context):
 
-       catalog = pl.Catalog("https://dbc-9a64f31c-25b9.cloud.databricks.com/", 
+       catalog = pl.Catalog("https://xxx-xxxxxxxxx-xxxx.cloud.databricks.com/", 
                             bearer_token=BEARER_TOKEN)
 
        df = catalog.scan_table("confessions", "default", "trip_data")
